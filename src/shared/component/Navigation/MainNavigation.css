@@ -1,0 +1,83 @@
+/* 1) The main header container */
+.main-header {
+    /* A vibrant gradient background */
+    background: linear-gradient(to right, #673ab7, #512da8);
+    color: #fff;
+    /* Spacing & alignment */
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* Slight shadow for depth */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* 2) Title styles */
+  .main-navigation__title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin: 0;
+    /* Remove default link styling inside the title */
+  }
+  .main-navigation__title a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* 3) Navigation container in header (desktop view) */
+  .main-navigation__header-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem; /* space between links */
+    margin: 0;
+    padding: 0;
+  }
+ 
+  .main-navigation__header-nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  .main-navigation__header-nav a:hover {
+    color: #ffeb3b; /* highlight color on hover */
+  }
+  
+  /* 4) Header center section */
+  .header-center {
+    flex: 1;            /* Let this section expand */
+    text-align: center; /* Center the title or other content */
+  }
+  
+  /* 5) Menu button (hamburger) for mobile */
+  .main-navigation__menu-btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 1.5rem;
+    width: 2rem;
+  }
+  .main-navigation__menu-btn span {
+    display: block;
+    width: 100%;
+    height: 0.2rem;
+    background: #fff;
+  }
+  
+  /* 6) Mobile responsiveness */
+  @media (max-width: 768px) {
+    /* Hide the nav links in the header by default on mobile */
+    .main-navigation__header-nav {
+      display: none;
+    }
+  
+    /* Show the hamburger menu */
+    .main-navigation__menu-btn {
+      display: flex;
+    }
+  }
+  

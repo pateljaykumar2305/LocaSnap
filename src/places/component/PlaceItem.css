@@ -1,0 +1,88 @@
+.place-item {
+    list-style: none;
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 10px;
+    background: #ffffff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+}
+
+.place-item:hover {
+    transform: scale(1.02);
+}
+
+.place-item__image img {
+    width: 100%;
+    max-width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.place-item__info {
+    margin: 1rem 0;
+}
+
+.place-item__info h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.place-item__info h3 {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 0.5rem;
+}
+
+.place-item__info p {
+    font-size: 1rem;
+    color: #777;
+}
+
+.place-item__actions {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.place-item__actions button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.place-item__actions button:nth-child(1) {
+    background: #007bff;
+    color: white;
+}
+
+.place-item__actions button:nth-child(2) {
+    background: #ffc107;
+    color: black;
+}
+
+.place-item__actions button:nth-child(3) {
+    background: #dc3545;
+    color: white;
+}
+
+.place-item__actions button:hover {
+    opacity: 0.8;
+}
+
+.map-container {
+    margin: 2rem auto;
+    width: 90%;
+    max-width: 40rem;
+    height: 15rem;
+    border: 1px solid #ccc;
+}

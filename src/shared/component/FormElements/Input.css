@@ -1,0 +1,48 @@
+/* Container for each form control */
+.form-control {
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Label styling */
+  .form-control label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Input field styling */
+  .form-control input {
+    font: inherit;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    transition: border-color 0.2s ease, background-color 0.2s ease;
+  }
+  
+  /* Input focus state */
+  .form-control input:focus {
+    outline: none;
+    border-color: #0c8df7;  /* Example highlight color */
+    background-color: #e8f0fe; /* Slightly tinted background on focus */
+  }
+  
+  /* Error state classes */
+  .form-control--invalid label,
+  .form-control--invalid p {
+    color: #b40e0e; /* Red text for label and error message */
+  }
+  
+  .form-control--invalid input {
+    border-color: #b40e0e;
+    background-color: #ffd1d1; /* Light red background */
+  }
+  
+  /* Error message styling */
+  .form-control p {
+    margin: 0.25rem 0 0;
+    font-size: 0.85rem;
+    color: #b40e0e; /* Red error text */
+  }
+  

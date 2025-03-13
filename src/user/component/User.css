@@ -1,0 +1,24 @@
+/* UsersPage.css */
+.users-container {
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .users-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .user-item {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    flex: 1 1 calc(33.333% - 20px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  

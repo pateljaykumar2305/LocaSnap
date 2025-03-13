@@ -1,0 +1,8 @@
+ul {
+    list-style: none;    /* remove bullets */
+    margin: 0;           /* remove default UL margins */
+    padding: 0;
+    display: flex;       /* lay out items in a row */
+    gap: 1rem;           /* optional spacing between items */
+    align-items: center; /* vertically center them if desired */
+  }

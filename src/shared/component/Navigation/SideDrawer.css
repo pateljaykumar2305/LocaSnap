@@ -1,0 +1,21 @@
+/* SideDrawer.css */
+
+/* Base styles for the side drawer */
+.side-drawer {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 250px; /* Adjust width as needed */
+  background-color: #333; /* Dark background color */
+  color: white; /* Text color */
+  padding: 1rem;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+  transform: translateX(-100%); /* Hide off-screen initially */
+  transition: transform 0.3s ease-out;
+}
+
+/* Class to show the drawer */
+.side-drawer.open {
+  transform: translateX(0);
+}

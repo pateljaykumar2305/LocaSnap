@@ -1,0 +1,104 @@
+/* MainHeader.css */
+/* .main-header {
+    display: flex;            
+    align-items: center;        
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: #fff;      
+    border-bottom: 1px solid #eee;
+  }
+   */
+   .main-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 20px; 
+    z-index: 999;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 1rem;
+    background-color: #6a1b9a;
+    color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* If you want the button on the far left and the title in the center: */
+  .main-navigation__title a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  
+
+  .user-item__image img {
+    width: 100px;    /* Make sure you have a visible width */
+    height: 100px;   /* Make sure you have a visible height */
+    object-fit: cover;
+    border-radius: 50%; /* optional for a circular image */
+  }
+  
+  .main-navigation__menu-btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  
+  .main-navigation__menu-btn span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 2px 0;
+    background-color: #fff;
+    transition: background-color 0.3s;
+  }
+  
+  /* Basic subtitle styling */
+  .main-navigation__subtitle {
+    margin: 0;
+    font-weight: 500;
+    color: #333;
+  }
+
+  nav li a:hover {
+    color: #282a20; /* subtle hover color, e.g. yellow */
+  }
+
+  nav ul {
+    display: flex;      /* horizontal row */
+    gap: 1.5rem;        /* space between links */
+    list-style: none;   /* remove bullets */
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Individual links */
+  nav li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+  }
+  
+  nav li a:hover {
+    color: #ffeb3b; /* subtle hover color, e.g. yellow */
+  }
+  
+  /* Responsive design: show hamburger on smaller screens, hide nav links if you want a side drawer. */
+  @media (max-width: 768px) {
+    .main-navigation__menu-btn {
+      display: flex; /* show the hamburger */
+    }
+  
+    /* If you want to hide the nav links on mobile and use a side drawer, do: */
+    nav ul {
+      display: none;
+    }
+  }

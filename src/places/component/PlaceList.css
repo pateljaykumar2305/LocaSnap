@@ -1,0 +1,39 @@
+.place-list {
+    list-style: none;
+    margin: 2rem auto;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    max-width: 40rem;
+}
+
+.place-list.center {
+    text-align: center;
+    margin-top: 2rem;
+    padding: 2rem;
+    border-radius: 10px;
+    background: #f8f9fa;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.place-list.center h2 {
+    color: #333;
+    font-size: 1.5rem;
+}
+
+.place-list.center button {
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.place-list.center button:hover {
+    background: #0056b3;
+}
